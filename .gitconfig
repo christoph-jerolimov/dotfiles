@@ -1,0 +1,70 @@
+[init]
+	defaultBranch = main
+
+# Personal
+[includeIf "gitdir:~/git/jerolimov/"]
+	path = ~/.gitconfig-personal
+[includeIf "gitdir:~/go/src/github.com/jerolimov/"]
+	path = ~/.gitconfig-personal
+[includeIf "gitdir:~/git/ecmascript-de/"]
+	path = ~/.gitconfig-personal
+[includeIf "gitdir:~/git/buenocode/"]
+	path = ~/.gitconfig-personal
+
+# Kubernetes and OpenShift
+[includeIf "gitdir:~/git/openshift/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/git/openshift-console-plugins/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/git/openshift-dev-console/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/git/openshift-pipelines/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/git/patternfly/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/git/redhat-developer/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/git/RedHatInsights/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/git/devfile-samples/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/git/hacky-stuff/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/git/knative/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/git/shipwright-io/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/git/tektoncd/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/git/tommy351/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/go/src/github.com/openshift/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/go/src/github.com/openshift-knative/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/go/src/github.com/knative/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/go/src/github.com/shipwright-io/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/go/src/github.com/tektoncd/"]
+	path = ~/.gitconfig-redhat
+
+# Backstage and RHDH
+[includeIf "gitdir:~/git/backstage/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/git/janus-idp/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/go/src/github.com/janus-idp/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/git/rhidp/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/git/rhobs/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/git/roadiehq/"]
+	path = ~/.gitconfig-redhat
+
+# Deskription
+[includeIf "gitdir:~/git/deskription/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/go/src/github.com/deskription/"]
+	path = ~/.gitconfig-redhat
