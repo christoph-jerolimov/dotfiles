@@ -1,7 +1,27 @@
 [init]
 	defaultBranch = main
 
+[branch]
+	sort = -committerdate
+
+[alias]
+	amend = "commit --amend --no-edit"
+	d = diff
+	dc = diff --cached
+	l = log --oneline --decorate
+	ll = log --oneline --decorate --graph
+	ls = log --oneline --decorate --graph --stat
+
+#[help]
+#	autocorrect = 1
+
+[rerere]
+	enabled = true
+	autoUpdate = true
+
 # Personal
+[includeIf "gitdir:~/git/cj/"]
+	path = ~/.gitconfig-personal
 [includeIf "gitdir:~/git/jerolimov/"]
 	path = ~/.gitconfig-personal
 [includeIf "gitdir:~/go/src/github.com/jerolimov/"]
@@ -9,6 +29,11 @@
 [includeIf "gitdir:~/git/ecmascript-de/"]
 	path = ~/.gitconfig-personal
 [includeIf "gitdir:~/git/buenocode/"]
+	path = ~/.gitconfig-personal
+[includeIf "gitdir:~/git/mobile2b/"]
+	path = ~/.gitconfig-personal
+
+[includeIf "gitdir:~/git/proberaum/"]
 	path = ~/.gitconfig-personal
 
 # Kubernetes and OpenShift
@@ -21,6 +46,8 @@
 [includeIf "gitdir:~/git/openshift-pipelines/"]
 	path = ~/.gitconfig-redhat
 [includeIf "gitdir:~/git/patternfly/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/git/rhd/"]
 	path = ~/.gitconfig-redhat
 [includeIf "gitdir:~/git/redhat-developer/"]
 	path = ~/.gitconfig-redhat
@@ -62,9 +89,21 @@
 	path = ~/.gitconfig-redhat
 [includeIf "gitdir:~/git/roadiehq/"]
 	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/git/jerolimov/rhdh-experiments/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/git/module-federation/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/git/immobiliare/"]
+	path = ~/.gitconfig-redhat
+[includeIf "gitdir:~/git/devhub/"]
+        path = ~/.gitconfig-redhat
 
 # Deskription
 [includeIf "gitdir:~/git/deskription/"]
 	path = ~/.gitconfig-redhat
 [includeIf "gitdir:~/go/src/github.com/deskription/"]
+	path = ~/.gitconfig-redhat
+
+# InstructLab
+[includeIf "gitdir:~/git/instructlab/"]
 	path = ~/.gitconfig-redhat

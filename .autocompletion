@@ -1,0 +1,22 @@
+# Do not call this script directly.
+# Include this into your .<your-shell>rc like
+#
+# source $HOME/.autocompletion
+
+shell=$(basename $SHELL)
+
+echo Shell: $shell
+
+set -x
+
+# Kubernetes & co.
+for c in kubectl kompose kn tkn helm minikube oc ocm
+do
+  /bin/echo asdasdasdasd $c
+  ls
+done
+
+set +x
+
+ls
+echo Shell: $shell
